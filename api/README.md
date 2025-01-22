@@ -40,19 +40,12 @@ cd user-activity-tracker
 
 
 3. Create a `.env` file in the root directory:
-
-DB_HOST=localhost
-
-DB_PORT=5432
-
-DB_USERNAME=postgres
-
-DB_PASSWORD=your_password
-
-DB_NAME=activity_tracker
-
-JWT_SECRET=your_jwt_secret
-
+- DB_HOST=localhost
+- DB_PORT=5432
+- DB_USERNAME=postgres
+- DB_PASSWORD=your_password
+- DB_NAME=activity_tracker
+- JWT_SECRET=your_jwt_secret
 
 4. Start the application:
 Development
