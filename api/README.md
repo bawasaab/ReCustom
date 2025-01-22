@@ -31,7 +31,7 @@ A NestJS application for tracking user activities and generating activity report
 ## Installation
 
 1. Clone the repository:
-- `git clone <repository-url>`
+- `git clone https://github.com/bawasaab/ReCustom.git`
 - `cd user-activity-tracker`
 
 
