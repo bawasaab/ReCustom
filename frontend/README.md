@@ -1,46 +1,145 @@
-# Getting Started with Create React App
+# User Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React-based user management system with activity tracking and analytics. Built with TypeScript, Material-UI, and Chart.js.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### User Management
+- Create, Read, Update, and Delete (CRUD) operations for users
+- Role-based user management (Admin/User)
+- Secure password handling
+- Real-time search functionality
+- Pagination for better data handling
+- Activity logging for user actions
 
-### `npm start`
+### Analytics & Reporting
+- Visual analytics dashboard
+- User activity metrics visualization
+- PDF report generation for individual users
+- Activity tracking (Logins and Downloads)
+- Real-time activity monitoring
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Security
+- JWT-based authentication
+- Protected routes
+- Secure API communication
+- Role-based access control
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### UI/UX
+- Modern Material Design interface
+- Responsive layout
+- Interactive data visualization
+- User-friendly notifications
+- Search and filter capabilities
+- Intuitive navigation
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**:
+  - React
+  - TypeScript
+  - Material-UI (MUI)
+  - Chart.js
+  - Axios
+  - React Router
 
-### `npm run build`
+- **Development**:
+  - Vite
+  - ESLint
+  - Prettier
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (v14 or higher)
+- npm or yarn
+- Backend API server running
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/user-management-system.git
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install dependencies:
+```bash
+cd user-management-system
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Create a `.env` file in the root directory:
+```env:c:\Users\user\Documents\GitHub\ReCustom\frontend\README.md
+VITE_API_URL=http://localhost:3000
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. Start the development server:
+```bash
+npm run dev
+```
 
-## Learn More
+## Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+src/
+├── components/
+│   ├── Login.tsx
+│   ├── UserTable.tsx
+│   ├── MetricsChart.tsx
+│   └── Navbar.tsx
+├── pages/
+│   └── MetricsPage.tsx
+├── App.tsx
+└── main.tsx
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Features in Detail
+
+### User Management
+- **User Listing**: Display users with pagination and search
+- **User Creation**: Add new users with role assignment
+- **User Editing**: Modify user details and roles
+- **User Deletion**: Remove users with confirmation
+- **Activity Tracking**: Monitor user logins and downloads
+
+### Analytics Dashboard
+- **Activity Metrics**: Visual representation of user activities
+- **Login Statistics**: Track user login patterns
+- **Download Analytics**: Monitor PDF download frequency
+- **User Comparison**: Compare activity levels across users
+
+### Reporting
+- **PDF Generation**: Create detailed user activity reports
+- **Activity Timeline**: Track user actions chronologically
+- **Custom Formatting**: Well-designed, professional reports
+- **Instant Download**: Quick access to user reports
+
+## API Integration
+
+The system communicates with a RESTful API server:
+
+- `GET /users`: Fetch all users
+- `POST /users`: Create new user
+- `PATCH /users/:id`: Update user
+- `DELETE /users/:id`: Delete user
+- `GET /users/:id/metrics`: Get user metrics
+- `POST /users/:id/pdf`: Generate user PDF report
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Material-UI for the awesome component library
+- Chart.js for the beautiful visualizations
+- The React community for inspiration and support 
