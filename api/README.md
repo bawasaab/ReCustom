@@ -52,14 +52,14 @@ Development
 npm run start:dev
 
 Production
-npm run build
-npm run start:prod
+- `npm run build`
+- `npm run start:prod`
 
 
 ## Database Seeding
 
 Populate the database with initial data:
-npm run seed
+- `npm run seed`
 
 
 ## API Endpoints
